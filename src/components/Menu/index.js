@@ -1,19 +1,17 @@
 import React from "react";
 import LogoMain from "../../assets/img/LogoMain.png";
-import "./Menu.css";
-import ButtonLink from "./components/ButtonLink";
-import Button from "../Button";
+import { LogoImage, MenuWrapper, ButtonLink } from "./styles";
 
 function Menu() {
   return (
-    <nav className="Menu">
+    <MenuWrapper className="Menu">
       <a href="/">
-        <img src={LogoMain} alt="Belflix Logo" className="Logo" />
+        <LogoImage src={LogoMain} alt="Belflix Logo" />
       </a>
-      <Button as="a" className="ButtonLink" href="/">
+      <ButtonLink as="a" href="/">
         Novo Vídeo
-      </Button>
-    </nav>
+      </ButtonLink>
+    </MenuWrapper>
   );
 }
 
